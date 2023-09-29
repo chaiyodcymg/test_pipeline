@@ -4,19 +4,19 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Stage Build"
+                sh 'ls -la /root'
             }
         }
 
         stage('Test') {
             steps {
-               echo "Stage Test"
+               echo 'Stage Test'
             }
         }
 
         stage('Deploy') {
             steps {
-                echo "Stage Deploy"
+                echo 'Stage Deploy'
             }
         }
 
