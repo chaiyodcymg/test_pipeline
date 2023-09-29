@@ -4,9 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                def gitUrl = "https://github.com/chaiyodcymg/test_pipeline.git"
-                def gitBranches = "git ls-remote --heads ${gitUrl}".execute().text.readLines().collect { it.split()[1].replaceAll("refs/heads/", "") }.sort().reverse()
-                sh 'sudo ls -la /root'
+              echo 'Branch ${branch}'
             }
         }
 
