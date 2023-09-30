@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-              echo 'build-test ${select}'
+              echo "build-test ${select}"
             }
         }
 
